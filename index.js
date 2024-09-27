@@ -10,7 +10,9 @@ const app=express()
 app.use(express.json())
 
 app.use('/notification',notificationRoutes )
-
+ app.get("/test",(req,re)=>{
+    res.send({msg:"running.."})
+ })
 const start =async()=>{
     const PORT = process.env.PORT || 3000;
 
