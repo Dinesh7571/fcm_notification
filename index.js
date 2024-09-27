@@ -10,7 +10,7 @@ const app=express()
 app.use(express.json())
 
 app.use('/notification',notificationRoutes )
- app.get("/test",(req,re)=>{
+ app.get("/test",(req,res)=>{
     res.send({msg:"running.."})
  })
 const start =async()=>{
